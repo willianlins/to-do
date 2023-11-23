@@ -1,0 +1,114 @@
+.headerContainer {
+  height: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-700);
+  position: relative;
+}
+
+.articleContainer {
+  width: 46rem;
+  min-height: 18.125rem;
+  margin: 5.625rem auto;
+}
+
+.headerInput {
+  width: 46rem;
+  height: 3.375rem;
+  position: absolute;
+  bottom: -1.688rem;
+}
+
+.headerInput input, button{
+  border-radius: 0.5rem;
+  height: 100%;
+  border: 0;
+}
+
+.headerInput input{
+  width: 39.875rem;
+  margin-right: 0.5rem;
+  padding: 15px;
+  background: var(--gray-500);
+  color: var(--gray-100);
+}
+
+.headerInput input::placeholder{
+  color: var(--gray-300);
+}
+
+.headerInput button{
+  width: 5.625rem;
+  cursor: pointer;
+  color: var(--gray-100);
+  background: var(--blue-dark);
+  transition: background 0.2s;
+}
+
+.headerInput button:hover{
+  background: var(--blue);
+}
+
+.headerInput button svg {
+  margin-left: 0.313rem;
+  vertical-align: middle;
+}
+
+.headerInput button span {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.infoTasks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: 2.688rem;
+}
+
+.infoTasks label+span {
+  margin-left: 0.625rem;
+}
+
+.infoTasks label[for='total-criado']{
+  color: var(--blue);
+}
+
+.infoTasks label[for='concluidas']{
+  color: var(--puple);
+}
+
+.spanQtd{
+  font-size: 0.75rem;
+  padding: 2px 9px;
+  background: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 999px;
+}
+
+.listTasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.noTasks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(18.125rem - 2.688rem);
+  color: var(--gray-300);
+  border-top: 1px solid var(--gray-400);
+}
+
+.noTasks svg {
+  margin-bottom: 1.25rem;
+}
