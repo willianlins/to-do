@@ -47,9 +47,14 @@
   transition: background 0.2s;
 }
 
-.headerInput button:hover{
+.headerInput button:not(:disabled):hover{
   background: var(--blue);
 }
+
+.headerInput button:disabled {
+  cursor: not-allowed;
+}
+
 
 .headerInput button svg {
   margin-left: 0.313rem;
